@@ -14,3 +14,6 @@ sleep 3
 
 echo "keytool -importkeystore"
 keytool -importkeystore -srckeystore keystore.jks -destkeystore keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass larryoke -deststorepass larryoke -srcalias tomcat -destalias tomcat -srckeypass larryoke -destkeypass larryoke -noprompt
+
+
+keytool -import -keystore keystore.p12  -file RapidSSL_SHA256_CA.txt
